@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   max-width: 70%;
   margin: 0 auto;
 }
@@ -94,7 +94,7 @@ header.exercise-header {
 
 .exercise h3 a {
   text-decoration: none;
-  color: white;
+  color: rgb(201, 5, 5);
   border-bottom: 1px solid white;
 }
 
