@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="../css/legal-page.css" />
     <script src="../js/scripts.js" defer></script>
     <title>Legal information page</title>
-  </head>
-  <body>
-    <header class="exercise-header">
+     <header class="exercise-header">
       <nav class="top-nav">
         <ul>
           <li class="back-button">
@@ -24,10 +22,20 @@
     <header class="legal-header">
       <h1>Legal Information</h1>
     </header>
+    
+  </head>
+  
+  <body>
+   
     <main>
       <section>
+        <div class="blank"></div>
+      </section>
+      <div class="box-scroll">
+      <section>
         <span class="section-label sticky">User agreement</span>
-        <div class="document-content">
+        <div class="document-content-relative">
+          
           <p>
             This User Agreement ("Agreement") is a legal agreement between you
             ("User" or "you") and [Your Website Name] ("Website" or "we" or
@@ -36,6 +44,7 @@
             using the Services, you agree to be bound by this Agreement.
           </p>
           <p><strong>Account Creation and Guidelines</strong></p>
+           <div class="box red"></div>
           <ol>
             <li>
               To use certain features of the Services, you may be required to
@@ -122,7 +131,7 @@
               agree to be bound by this Agreement.
             </li>
           </ol>
-        </div>
+        
       </section>
       <section>
         <span class="section-label sticky">Terms of service</span>
@@ -320,8 +329,11 @@
               agree to be bound by this Agreement.
             </li>
           </ol>
+          <p class="end-of-document">-- End of document --</p>
+        </div>
         </div>
       </section>
+      </div>
     </main>
     <footer id="footer">
       <div class="footer-content fixed">
