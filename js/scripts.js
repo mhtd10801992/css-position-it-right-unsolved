@@ -1,11 +1,16 @@
-const agreeBtn = document.querySelector('.agree-btn');
-const footerHeight = window.getComputedStyle(
-  document.getElementById('footer')
-).height;
 
-document.addEventListener('scroll', () => {
-  window.innerHeight + window.scrollY + parseInt(footerHeight) >=
-  document.body.scrollHeight
-    ? agreeBtn.removeAttribute('disabled')
-    : agreeBtn.setAttribute('disabled', `true`);
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const agreeBtn = document.querySelector('.agree-btn');
+  const boxScroll = document.querySelector('.box-scroll');
+
+  boxScroll.addEventListener('scroll', () => {
+    const scrollTop = boxScroll.scrollTop;
+    const scrollHeight = boxScroll.scrollHeight;
+    const clientHeight = boxScroll.clientHeight;
+
+    if (scrollTop + clientHeight >= scrollHeight) {
+      agreeBtn.removeAttribute('disabled');
+    } else {
+      agreeBtn.setAttribute('disabled', 'true');
+    }
+  });
