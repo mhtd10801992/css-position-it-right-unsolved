@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const agreeBtn = document.querySelector('.agree-btn');
   const boxScroll = document.querySelector('.box-scroll');
@@ -8,9 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollHeight = boxScroll.scrollHeight;
     const clientHeight = boxScroll.clientHeight;
 
-    if (scrollTop + clientHeight >= scrollHeight) {
-      agreeBtn.removeAttribute('disabled');
+    if (scrollTop + clientHeight >= scrollHeight - 1) {
+      agreeBtn.disabled = false;
+      agreeBtn.classList.add('active');
     } else {
-      agreeBtn.setAttribute('disabled', 'true');
+      agreeBtn.disabled = true;
+      agreeBtn.classList.remove('active');
     }
   });
+});
