@@ -1,21 +1,7 @@
-body {
-  background-color: #21222c;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
-
-.legal-header {
-  background-color: #e2e2e2;
-  padding: 30px;
-  width: 100%;
-}
-
 
 .robot-container {
   position: absolute;
-  top: 300px;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
@@ -23,6 +9,46 @@ body {
 }
 
 
+.robot-hair-style {
+
+position: absolute;
+  top: -30px; /* adjust based on how high you want the hair */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+
+
+}
+
+.robot-hair-one {
+    position: relative;
+  display: flex;
+  height: 30px;
+  width: 20px;
+  background-color: #e40d0d;
+}
+
+/* Style for robot-hair-two */
+.robot-hair-two {
+    height: 30px;
+  width: 20px;
+  background-color: #cde20e;
+}
+
+
+.robot-hair-three {
+    height: 30px;
+  width: 20px;
+  background-color: #63155f;
+}
+
+.robot-hair-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 0px;
+}
 .robot-face-shape {
   background-color: #4e4e50;
   width: 100%;
@@ -127,45 +153,5 @@ body {
   animation: toothTalkReverse 0.6s infinite ease-in-out;
 }
 
-.robot-tooth:nth-child(1),
-.robot-tooth:nth-child(2),
-.robot-tooth:nth-child(3),
-.robot-tooth:nth-child(4),
-.robot-tooth:nth-child(5),
-.robot-tooth:nth-child(6) {
-
-}
 
 
-.robot-hair-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.robot-hair-one {
-  display: flex;
-  background-color: #e40d0d;
-}
-
-/* Style for robot-hair-two */
-.robot-hair-two {
- 
-  background-color: #cde20e;
-}
-
-
-.robot-hair-three {
- 
-  background-color: #63155f;
-}
-
-.robot-hair-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-top: 0px;
-}
