@@ -1,70 +1,67 @@
 .legal-header {
+    position: fixed;
   background-color: #e2e2e2;
   padding: 30px;
+  margin-top: 60px;
   width: 100%;
+  z-index: 100;
 }
 
 .legal-header h1 {
-  position: fixed;
-  top: 60px;
-  left: 0;
+
   width: 100%;
-  background-color: #e2e2e2;
-  padding: 30px;
-  padding-left: 150px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.body-content {
+
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  margin-top: 350px;
+  margin-bottom: 100px;
  
-
-
 }
 
 main {
-   flex: 1;
+position:fixed;
+  top: 200px; /* adjust based on your header height */
+  left: 0;
+  right: 0;
+  bottom: 100px; /* adjust based on your footer height */
   overflow-y: auto;
-  margin-top: 30px; /* height of header */
-  margin-bottom: 10px; /* height of footer */
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+
+ 
+  gap: 60px;
+  padding: 0 90px;
+ scrollbar-width: none;
 
 
-}
-
-.box-scroll {
-   flex: 1;
-  overflow-y: auto;
-  margin-top: 0px; /* header height */
-  margin-bottom: 10px; /* footer height */
-  padding: 0 20px;
-  overflow: hidden;
+  
 
 }
-
-.section-label.sticky {
-  position: sticky;
-  top: 0;
-  background-color: #2b2d3b;
-  color: white;
-  padding: 10px 16px;
-  z-index: 10;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* optional: visual separation */
-  text-align: center;
-  ;
-}
-
 
 section {
+
   display: flex;
-  gap: 30px;
+  bottom: 250px;
+  top: 0;
+  gap: 90px;
   position: relative;
   border-bottom: 1px solid grey;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
+ 
+
+
+
 }
 
 .section-label {
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: #2b2d3b;
   height: max-content;
@@ -75,17 +72,12 @@ section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .document-content p {
   line-height: 28px;
 }
-.document-content-relative {
- 
-  line-height: 28px;
-}
-
 
 .document-content ol {
   margin: 0;
@@ -97,22 +89,37 @@ section {
 }
 
 footer {
-  display: flex;
-  align-items: center;
+  position: relative;
   width: 100%;
   background-color: #e2e2e2;
-  padding: 0 30px;
+  padding: 20px 30px;
   min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
 }
 
+
 .footer-content {
-  width: 100%;
   max-width: 900px;
+  width: 100%;
   display: flex;
-  gap: 50px;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
   margin: 0 auto;
+  font-size: 14px;
+  color: #333;
+
+ 
 }
 
 .agree-btn {
@@ -131,24 +138,11 @@ footer {
   color: black;
   cursor: not-allowed;
 }
-.agree-btn.active {
-  background-color: blueviolet;
-  color: white;
+
+.agree-btn:not(:disabled) {
+  background-color: indigo;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
-.box-scroll {
-  flex: 1;
-  overflow-y: auto;
-  margin-top: 20px; /* header height */
-  margin-bottom: 70px; /* footer height */
-  padding: 0 20px;
-}
-.blank-div {
-  height: 10px;
-  width: 100%;
-}
-.blank {
-  width: 100vw;
-  margin-left: calc(-50vw + 450px); /* centers it relative to section's 900px */
-}
+
