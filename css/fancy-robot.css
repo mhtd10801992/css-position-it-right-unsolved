@@ -7,7 +7,13 @@
   width: 200px;
   height: 300px;
 }
+.robot-face-shape {
+  background: linear-gradient(to bottom, #4e4e50, #1e1e1f);
+}
 
+body {
+  background: linear-gradient(to right,  #474545, #f0f0f0);
+}
 
 .robot-hair-style {
 
@@ -63,7 +69,7 @@ position: absolute;
   top: 60px;
   width: 30px;
   height: 30px;
-  background-color: white;
+  background-color: rgba(255, 255, 0, 0.4);
   border-radius: 50%;
 }
 
