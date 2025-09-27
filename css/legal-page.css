@@ -30,11 +30,7 @@
 main {
   position: relative;
   z-index: 1;
-<<<<<<< HEAD
-  margin-top: 100px; /* Pushes main content down from top of body */
-=======
   margin-top: 180px; /* Pushes main content down from top of body */
->>>>>>> ef74b93 (Update robot eye styles with Picsum background)
   margin-bottom: 100px;
   padding-bottom: 100px;
 
