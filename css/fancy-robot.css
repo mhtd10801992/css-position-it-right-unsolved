@@ -7,11 +7,11 @@
   height: 300px;
 }
 .robot-face-shape {
-  background: linear-gradient(to bottom, #4e4e50, #1e1e1f);
+  background: linear-gradient(to bottom, #1d1df0, #1e1e1f);
 }
 
 body {
-  background: linear-gradient(to right,  #474545, #f0f0f0);
+    background: linear-gradient(to right, #00c9ff, #92fe9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .robot-hair-style {
@@ -55,7 +55,7 @@ position: absolute;
   margin-top: 0px;
 }
 .robot-face-shape {
-  opacity: 0.9;
+  
   background-color: #4e4e50;
   width: 100%;
   height: 100%;
@@ -63,7 +63,19 @@ position: absolute;
   position: relative;
 }
 
-.robot-eye-left,
+.robot-eye-left
+ {
+  position: absolute;
+  top: 60px;
+  width: 50px;
+  height: 40px;
+  background-image: url('https://picsum.photos/seed/picsum/30/30');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .robot-eye-right {
   position: absolute;
   top: 60px;
@@ -91,7 +103,8 @@ position: absolute;
   top: 100px;
   width: 20%;
   height: 20%;
-  background-color: #6c6c6c;
+  background-color: #8de706;
+  opacity: 0.5;
 }
 
 .robot-ear-left {
