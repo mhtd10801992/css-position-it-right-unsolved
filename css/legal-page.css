@@ -8,7 +8,7 @@
   left: 0;
   z-index: 1000;
 }
-.legal-header::after {
+/* .legal-header::after {
   content: "";
   display: block;
   height: 30px;
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-}
+} */
 
 
 .legal-header h1 {
@@ -100,7 +100,7 @@ footer {
 
   display: flex;
   gap: 50px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
